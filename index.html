@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: darkgreen;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+<h1>Student Registration Form</h1>
+
+<form onsubmit="submitForm(event)">
+  
+  <label>Full Name:</label>
+  <input type="text" required>
+
+  <label>Student ID:</label>
+  <input type="text" required>
+
+  <label>Email:</label>
+  <input type="email" required>
+
+  <label>Phone Number:</label>
+  <input type="text" required>
+
+  <label>Date of Birth:</label>
+  <input type="date" required>
+
+  <label>Gender:</label>
+  <select required>
+    <option value="">Select Gender</option>
+    <option>Male</option>
+    <option>Female</option>
+  </select>
+
+  <label>Course/Program:</label>
+  <input type="text">
+
+  <label>Year of Study:</label>
+  <select>
+    <option>Select Year</option>
+    <option>Year 1</option>
+    <option>Year 2</option>
+    <option>Year 3</option>
+    <option>Year 4</option>
+  </select>
+
+  <label>Address:</label>
+  <textarea></textarea>
+
+  <label>Additional Comments:</label>
+  <textarea></textarea>
+
+  <button type="submit">Submit</button>
+
+</form>
+</div>
+
+<script>
+function submitForm(e) {
+  e.preventDefault();
+  alert("Form submitted successfully!");
+}
+</script>
+
+</body>
+</html>
